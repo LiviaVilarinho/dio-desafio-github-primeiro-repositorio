@@ -1,10 +1,11 @@
-git é um software de versionamento de código distribuido, ajudando a criar e monitorar diferentes versões do codigo, dentro da maquina.
-git é gratuito (open source)
+Git é um software de versionamento de código distribuido, ajudando a criar e monitorar diferentes versões do codigo, dentro da máquina.
 
-sistema distribuido - um sistema que possui multiplas copias de si mesmo em diversos locais
+Git é gratuito (open source)
 
-github é um repositório online para armazenar os nossos códigos.
-github tem planos pagos
+Sistema distribuído - um sistema que possui múltiplas cópias de si mesmo em diversos locais
+
+Github é um repositório online para armazenar os nossos códigos. É um sistema distruibuído e seguro.
+Github tem planos pagos
 
 Benefícios das ferramentas
 1- Controle de versão
@@ -47,28 +48,22 @@ Falando a grosso modo, SHA1 é uma forma curta de representar um arquivo.
 -----------------------------------------------
 3 tipos basicos de objetos do git, responsável pelo versionamento de código:
 
-- blobs (bolhas): contem metadados do git, tipo do objeto, tamanho do arquivo. ele nao guarda o bome do arquivo, so o sha (os caracteres identificador)
-blob ele é um objeto que encapsula esse comportamento de diretórios, ela é usada para apontar para diretórios que contém arquivos e apontar por consequencia, para arquivos tambem. 
+- blobs (bolhas): contém metadados do git, tipo do objeto, tamanho do arquivo. Ele nao guarda o nome do arquivo, só o sha (os caracteres identificador)
+blob ele é um objeto que encapsula esse comportamento de diretórios, ela é usada para apontar para diretórios que contém arquivos e apontar por consequência, para arquivos tambem. 
 
-- trees (arvores): armazem de blobs (blocos basicos de composição), tambem contem metadados, ela aponta para um blob, que por sua vez tem um sha1, e ele guarda o nome do arquivo. ela é responsavel por montar toda estrutura de onde esta o arquivo.
+- trees (arvores): armazem de blobs (blocos basicos de composição), tambem contem metadados, ela aponta para um blob, que por sua vez tem um sha1, e ele guarda o nome do arquivo. Ela é responsavel por montar toda estrutura de onde esta o arquivo.
 
 - commits: é um objeto que junta tudo e da sentido ao que esta fazendo. O commit leva o nome do autor, quem esta fazendo o commit. e os commits possuem um sha1  (incriptação). 
 
-quando voce da um commit voce garante por um historico, que ninguem alterou aquele arquivo.
-e ele tem um histórico , onde mostra quantas vezes e quem alterou o código.
+Quando voce da um commit voce garante por um historico, que ninguem alterou aquele arquivo.
+E ele tem um histórico , onde mostra quantas vezes e quem alterou o código.
 
-é um processo único de cada autor.
+É um processo único de cada autor.
 -----------------------------------------------
 
-git é um sistema distribuído e seguro
------------------------------------------------
-
-Chaves SSH é uma forma de estabelecer uma conexão segura e incriptada entre duas máquinas. Vai ter sempre uma chave publica e uma privada. a chave publica a gente informa no github.
+Chaves SSH é uma forma de estabelecer uma conexão segura e incriptada entre duas máquinas. Vai ter sempre uma chave publica e uma privada. A chave publica a gente informa no github.
 
 TOKEN de acesso pessoal - serve pra gerar um token na maquina pelo github
-
-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
-token github
 
 -----------------------------------------------
 COMANDOS NO GIT
