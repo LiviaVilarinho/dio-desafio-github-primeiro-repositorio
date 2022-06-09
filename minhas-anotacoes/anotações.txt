@@ -1,0 +1,146 @@
+git é um software de versionamento de código distribuido, ajudando a criar e monitorar diferentes versões do codigo, dentro da maquina.
+git é gratuito (open source)
+
+sistema distribuido - um sistema que possui multiplas copias de si mesmo em diversos locais
+
+github é um repositório online para armazenar os nossos códigos.
+github tem planos pagos
+
+Benefícios das ferramentas
+1- Controle de versão
+2 - Armazenamento em nuvem
+3- Trabalho em equipe
+4- Melhorar seu código
+5- Reconhecimento (principalmente github, pois ele serve como se fosse uma rede social,seu projeto fica visível para o mundo)
+
+CMD
+dir lista todos os diretórios da unidade em busca (ex: C, usuarios, etc)
+
+cd.. volta nivel de pasta
+
+cd/ vai para a pasta disco local C
+
+cls limpa o terminal (tela do cmd)
+
+tab no cmd , tem função de alto completar, se der cd W, ele completa a palavra windows pq sabe que tem uma pasta chamada windows dentro do C
+
+mkdir cria pasta 
+ex.: mkdir workspace
+
+echo - printa no terminal uma frase ou termo que é passado
+ex: echo hello > hello.txt
+(cria um arquivo dentro da pasta workspace)
+
+del - deleta arquivos da pasta
+
+rmdir "workspace" /S /Q apaga toda pasta workspace. obs: /s/q serve para dizer que todas as subpastas serão deletadas
+
+----------------------------------------------
+SHA1 é um algoritmo de incriptação, é um algoritmo que pega determinado arquivo (seja foto, frase) e vai embaralhar ele de uma forma específica. 
+
+A encriptação gera um conjuto de caracteres indentificador de 40 digitos e ele é único, serve de identificação.
+
+git faz uso desse algoritmo de incriptação.
+
+Falando a grosso modo, SHA1 é uma forma curta de representar um arquivo.
+
+-----------------------------------------------
+3 tipos basicos de objetos do git, responsável pelo versionamento de código:
+
+- blobs (bolhas): contem metadados do git, tipo do objeto, tamanho do arquivo. ele nao guarda o bome do arquivo, so o sha (os caracteres identificador)
+blob ele é um objeto que encapsula esse comportamento de diretórios, ela é usada para apontar para diretórios que contém arquivos e apontar por consequencia, para arquivos tambem. 
+
+- trees (arvores): armazem de blobs (blocos basicos de composição), tambem contem metadados, ela aponta para um blob, que por sua vez tem um sha1, e ele guarda o nome do arquivo. ela é responsavel por montar toda estrutura de onde esta o arquivo.
+
+- commits: é um objeto que junta tudo e da sentido ao que esta fazendo. O commit leva o nome do autor, quem esta fazendo o commit. e os commits possuem um sha1  (incriptação). 
+
+quando voce da um commit voce garante por um historico, que ninguem alterou aquele arquivo.
+e ele tem um histórico , onde mostra quantas vezes e quem alterou o código.
+
+é um processo único de cada autor.
+-----------------------------------------------
+
+git é um sistema distribuído e seguro
+-----------------------------------------------
+
+Chaves SSH é uma forma de estabelecer uma conexão segura e incriptada entre duas máquinas. Vai ter sempre uma chave publica e uma privada. a chave publica a gente informa no github.
+
+TOKEN de acesso pessoal - serve pra gerar um token na maquina pelo github
+
+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
+token github
+
+-----------------------------------------------
+COMANDOS NO GIT
+crtl + l = limpa tela do dos dentro do git dash
+
+- iniciar o git
+
+. git init - inicia (cria) o repositório no git (pasta)
+. git add - mover arquivos e dar inicio aos primeiros comandos
+git add * (envia todas as alteraçoes)
+. git commit
+
+criando um repositório
+mkdir livro-receitas (criou pasta com nome livro-receitas)
+".git (pastas ocultas que nao aparecem, sempre começam com . na frente)"
+
+flag "-a" mostra os arquivos ocultos
+
+- iniciar o versionamento
+
+- criar um commit
+
+-----------------------------------------------
+
+Tracked (arquivos que o git tem ciência deles) - dentro dos arquivos que são rastreados pelo git, ele se subdivide em 3 estagios diferentes
+
+Unmodified (aguarda modificações)- arquivo que ainda não foi modificado (percebe pelo sha1 (por comparação) do arquivo pra ver se houve mudança ou não e se houver, ele muda para modified).
+
+Modified - arquivo que sofreu modificação
+Staged - conceito chave, onde ficam os arquivos aonde estao se preparando para fazer parte de um outro tipo de agrupamento. 
+Alternando um arquivo nesse ponto ele vai para staged, onde aguarda fazer parte de algo)
+
+Untracked (arquivos que o git ainda não tem ciência deles)
+ao rodar o git add (ele move o arquivo de untracked pra aquela area que esta aguardando algo (staged))
+
+-----------------------------------------------
+Significado dos repositórios
+
+2 ambientes:
+
+- ambiente de desenvolvimento (repositorio de trabalho, staging area(area de staging) e local repository)
+quando se faz um commit, ele passa a integrar um repositorio local, que por sua vez, pode ser empurrado (push) a um repositorio remoto.
+
+git push origin master (para enviar as alterações para o github)
+
+tudo que esta em local repository tem de estar commitado
+
+comando git status mostra se o arquivo esta untrucked, modified ou unmodified
+
+comando git commit -m "msg" (para commitar) 
+
+- servidor (repositório remoto guardado no servidor)
+
+
+RESUMINDO:
+no Working Directory (repositório de trabalho) pegamos todos os arquivos e demos um git add que moveu todos os arquivos seja unmodified ou untrancked para Staged que vai compor a area de staged (STAGING AREA).
+E quando usou o comando git commit passando a mensagem com a flag -m , movemos toda a área de STAGING para LOCAL REPOSITORY (repositorio local)
+
+-----------------------------------------------
+RESOLVENDO CONFLITOS
+
+git push empurrar pro repositório
+
+git pull origin master ele puxa o conteudo do repositorio (no caso de alguem ter mexido na versão), dai voce baixa o repositorio atualizado pra sua maquina e depois você empurra com as suas atualizações e depois da um push pra ai, subir com as suas alterações.
+
+-----------------------------------------------
+
+BAIXANDO CODIGOS NO GITHUB
+
+botao code - download zip ou abrir no proprio github desktop)
+
+para clonar, basta copiar o link URL:
+volta no GIT BUSH (editor) - entra com comando:
+git clone e cola o caminho do repositorio github que quiser.
+
