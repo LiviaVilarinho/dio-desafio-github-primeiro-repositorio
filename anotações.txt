@@ -127,7 +127,7 @@ RESOLVENDO CONFLITOS
 
 git push empurrar pro repositório
 
-git pull origin master ele puxa o conteudo do repositorio (no caso de alguem ter mexido na versão), dai voce baixa o repositorio atualizado pra sua maquina e depois você empurra com as suas atualizações e depois da um push pra ai, subir com as suas alterações.
+git pull origin main ele puxa o conteudo do repositorio (no caso de alguem ter mexido na versão), dai voce baixa o repositorio atualizado pra sua maquina e depois você empurra com as suas atualizações e depois da um push pra ai, subir com as suas alterações.
 
 -----------------------------------------------
 
