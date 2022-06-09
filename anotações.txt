@@ -105,7 +105,7 @@ Untracked (arquivos que o git ainda não tem ciência deles)
 ao rodar o git add (ele move o arquivo de untracked pra aquela area que esta aguardando algo (staged))
 
 -----------------------------------------------
-Signifcado dos repositórios
+Significado dos repositórios
 
 2 ambientes:
 
